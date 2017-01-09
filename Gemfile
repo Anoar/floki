@@ -79,3 +79,5 @@ group :test do
   gem "codeclimate-test-reporter", require: nil
   gem 'database_cleaner', '~> 1.5', '>= 1.5.1'
 end
+
+#gem 'rails-erd'
