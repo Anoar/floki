@@ -28,42 +28,25 @@ gem 'coveralls', require: false
 gem 'simple_form'
 gem 'rails-i18n'
 gem 'brcpfcnpj', '~> 3.3'
-gem 'omniauth', '~> 1.3', '>= 1.3.1'
-gem 'omniauth-google-oauth2', '~> 0.4.1'
-gem 'omniauth-facebook', '~> 3.0'
-gem 'omniauth-github', '~> 1.1', '>= 1.1.2'
-gem 'omniauth-linkedin'
-gem 'figaro'
-gem 'commontator', '~> 4.11.1'
-gem 'acts_as_votable'
-gem 'newrelic_rpm','>= 3.15.2.317'
-gem "recaptcha",'~> 1.3.0', require: "recaptcha/rails"
 gem 'public_activity'
 gem "burgundy"
 gem 'sweetalert-rails','>=1.1.3'
-gem 'gibbon', '~> 2.2', '>= 2.2.3'
 gem 'bootstrap-datepicker-rails'
 gem 'brdata'
 gem 'configatron'
-gem 'redcarpet'
 gem 'coderay'
 gem "github_api"
-gem 'omniauth-twitter', '~> 1.2', '>= 1.2.1'
 
 group :doc do
   gem 'sdoc', :require => false
 end
 
-platforms :ruby do
-  gem 'unicorn','~> 5.1.0'
-end
 
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'quiet_assets'
   gem 'rails_layout'
-  gem 'rails-erd'
 end
 
 group :development, :test do
@@ -72,12 +55,6 @@ group :development, :test do
   gem 'dotenv', '~> 2.1', '>= 2.1.1'
 end
 
-group :test do
-  gem 'cpf_faker', '~> 1.3'
-  gem 'rspec-rails', '~> 3.0'
-  gem 'shoulda-matchers', '~> 3.1'
-  gem "codeclimate-test-reporter", require: nil
-  gem 'database_cleaner', '~> 1.5', '>= 1.5.1'
-end
+
 
 #gem 'rails-erd'
