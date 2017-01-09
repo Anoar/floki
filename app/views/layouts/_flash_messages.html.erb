@@ -1,0 +1,25 @@
+<% flash.each do |name, msg| %>
+    <% if msg.is_a?(String) %>
+        <% name == :notice ? icone = "fa fa-check-circle-o" : icone = "fa fa-remove" %>
+        <script type="text/javascript">
+            $.amaran({
+                content:{
+                    bgcolor:'<%= flash_error_color(name) %>',
+                    color:'#fff',
+                    message:'<strong><%= flash_message_title(name)%></strong><p style="font-size:12px"><%=msg%></p>',
+                },
+                theme:'colorful',
+                cssanimationOut: 'bounceOut',
+                closeOnClick:true,
+                delay:10000,
+                position: "top right",
+                closeButton:true,
+                cssanimationIn: 'rubberBand',
+                cssanimationOut: 'bounceOutUp'
+            });
+        </script>
+    <% end %>
+<% end %>
+
+
+

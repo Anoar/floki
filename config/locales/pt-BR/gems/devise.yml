@@ -1,0 +1,93 @@
+pt-BR:
+  devise: &default
+    confirmations:
+      new:
+        header: Reenviar instruções de confirmação
+        resend_confirmation_instructions: Reenviar instruções de confirmação
+    mailer:
+      confirmation_instructions:
+        action: Confirmar minha conta
+        greeting: Bem-vindo %{recipient}!
+        instruction: 'Você pode confirmar sua conta através do link abaixo:'
+      reset_password_instructions:
+        action: Redefinir minha senha
+        greeting: Olá %{recipient}!
+        instruction: Alguém fez o pedido para redefinir sua senha, e você pode fazer isso clicando no link abaixo.
+        instruction_2: Se você não fez este pedido, por favor ignore este e-mail.
+        instruction_3: Sua senha não será alterada até que você acesse o link abaixo e crie uma nova.
+      unlock_instructions:
+        action: Desbloquear minha conta
+        greeting: Olá %{recipient}!
+        instruction: 'Clique no link abaixo para desbloquear sua conta:'
+        message: Sua conta foi bloqueada devido ao excessivo número de tentativas acesso inválidas.
+    passwords:
+      edit:
+        change_my_password: Alterar minha senha
+        change_your_password: Alterar sua senha
+        confirm_new_password: Confirme sua nova senha
+        new_password: Nova senha
+      new:
+        forgot_your_password: Esqueceu sua senha?
+        send_me_reset_password_instructions: Enviar instruções para redefinição da senha
+      user:
+        send_instructions: As Intruções foram enviados em seu e-mail!
+    registrations:
+      edit:
+        are_you_sure: Você tem certeza?
+        cancel_my_account: Cancelar minha conta
+        currently_waiting_confirmation_for_email: 'No momento esperando por: %{email}'
+        leave_blank_if_you_don_t_want_to_change_it: deixe em branco caso não queira alterá-la
+        title: Editar %{resource}
+        unhappy: Não está contente
+        update: Atualizar
+        we_need_your_current_password_to_confirm_your_changes: precisamos da sua senha atual para confirmar suas mudanças
+      user:
+        updated: Usuário atualizado com sucesso!
+      new:
+        sign_up: Inscrever-se
+    sessions:
+      signed_in: "Logado com sucesso."
+      signed_up: "Cadastro realizado com sucesso"
+      signed_out: "Deslogado com sucesso."
+      already_signed_out: 'Você já se deslogou.'
+      new:
+        sign_in: Login
+    shared:
+      links:
+        back: Voltar
+        didn_t_receive_confirmation_instructions: Não recebeu instruções de confirmação?
+        didn_t_receive_unlock_instructions: Não recebeu instruções de desbloqueio?
+        forgot_your_password: Esqueceu sua senha?
+        sign_in: Login
+        sign_in_with_provider: Entrar com %{provider}
+        sign_up: Inscrever-se
+    unlocks:
+      new:
+        resend_unlock_instructions: Reenviar instruções de desbloqueio
+    failure:
+      already_authenticated: 'Você já está logado.'
+      inactive: 'Sua conta ainda não foi ativada.'
+      invalid: 'E-mail ou senha inválidos.'
+      invalid_token: 'O token de autenticação não é válido.'
+      locked: 'Sua conta está bloqueada.'
+      not_found_in_database: 'E-mail ou senha inválidos.'
+      timeout: 'Sua sessão expirou, por favor, efetue login novamente para continuar.'
+      unauthenticated: 'Para continuar, efetue login ou registre-se.'
+      unconfirmed: 'Antes de continuar, confirme a sua conta.' 
+
+    errors:
+      messages:
+        already_confirmed: "já foi confirmado"
+        confirmation_period_expired: "precisa ser confirmada em até %{period}, por favor, solicite uma nova"
+        expired: "expirou, por favor, solicite uma nova"
+        not_found: "não encontrado"
+        not_locked: "não foi bloqueado"
+        not_saved:
+          one: "Não foi possível salvar %{resource}: 1 erro"
+          other: "Não foi possível salvar %{resource}: %{count} erros."
+
+      user:
+        <<: *default
+
+    omniauth_callbacks:
+      success: "Acesso permitido!"

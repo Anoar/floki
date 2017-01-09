@@ -1,0 +1,77 @@
+<!-- Footer -->
+<footer id="page-footer" style="background-color: rgba(210, 200, 200, 0.09);">
+
+  <div class="content content-boxed" style="padding-top: 20px; padding-left: 20px; padding-right: 20px;">
+    <!-- Footer Navigation -->
+
+    <div class="row">
+      <div class="col-sm-3">
+        <ul class="list list-simple-mini font-s13">
+          <li>
+            <a class="font-w600" href="/paginas/quem-somos">Quem Somos</a>
+          </li>
+          <li>
+            <a class="font-w600" href="/paginas/parceiros">Parceiros</a>
+          </li>
+          <li>
+            <a class="font-w600" href="/contact">Contate-nos</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-sm-3">
+        <ul class="list list-simple-mini font-s13">
+          <li>
+            <%= link_to "Política de Privacidade", "/paginas/politica-privacidade" ,class: "font-w600"%>
+          </li>
+          <li>
+            Termos de Uso
+          </li>
+          <li>
+            Associe-se
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="font-s13 push">
+          <strong>Associação Goiana de Ruby on Rails</strong><br>
+          Goiânia - Goiás<br>
+
+          <div class="font-s13">
+            <i class="si si-envelope-open"></i>
+            <%= link_to 'contato@gorails.com.br', 'mailto:contato@gorails.com.br' %>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-sm-3">
+        <div class="pull-right">
+          <a class="font-w600" href="http://www.locaweb.com.br/cloud/jelastic/?IS=1&gclid=CjwKEAiA04S3BRCYteOr6b-roSUSJABE1-6BLYnWKU4zxPepeq2-XLed8Hl3jN3rNWhszz3bSlVipRoCQOrw_wcB#" target="_blank"> <%= image_tag("locaweb.png", width: "150px", alt: "Edit Entry") %></a>
+        </div>
+      </div>
+
+    </div>
+    <!-- END Footer Navigation -->
+
+    <!-- Copyright Info -->
+    <div class="font-s12 push-20 clearfix">
+      <hr class="remove-margin-t" style="margin-bottom: 10px;">
+      <div class="pull-left">
+        <a class="font-w600" href="/" >GoRails</a> &copy; <%= DateTime.now.year %>.
+        Todos os direitos reservados.
+      </div>
+      <div class="pull-right">
+        <div class="text-center center-block">
+          <a href="https://www.facebook.com/gorailsbr" target="_blank"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+          <a href="https://twitter.com/@GoRailsbr" target="_blank"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+          <a href="#" target="_blank"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+          <a href="mailto:contato@gorails.com.br"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- END Copyright Info -->
+  </div>
+</footer>
+
