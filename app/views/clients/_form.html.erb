@@ -1,0 +1,13 @@
+<%= simple_form_for(@client) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :fantasy_name %>
+    <%= f.input :corporate_name %>
+  </div>
+
+  <div class="form-group form-actions">
+  	<%= link_to I18n.t('misc.action.back'), clients_path, class: 'btn btn-sm btn-square btn-default' %> 
+    <%= f.button :submit, class: 'btn btn-sm btn-square btn-primary' %>
+  </div>
+<% end %>

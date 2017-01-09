@@ -11,7 +11,9 @@
 // about supported directives.
 //
 //= require core/jquery.min
+//= require jquery
 //= require jquery_ujs
+//= require jquery-ui
 //= require turbolinks
 //= require core/bootstrap.min
 //= require core/jquery.slimscroll.min
@@ -22,11 +24,6 @@
 //= require core/js.cookie.min
 //= require app
 //= require jquery.amaran.min
-//= require summernote
-//= require maskedinput
-//= require plugins/magnific-popup/magnific-popup.min
-//= require commontator/application
-//= require sweetalert
 //= require sweet-alert-confirm
 //= require bootstrap-datepicker
 //= require bootstrap-datepicker.pt

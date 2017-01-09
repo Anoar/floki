@@ -1,0 +1,34 @@
+pt-BR:
+  clients:
+    default: &default
+      h1: Client
+      header: "Lista de clients"
+      block_header: clients
+    index:
+      <<: *default
+      header: "Lista de clients"
+      block_header: clients
+    show:
+      <<: *default
+      header: "Detalhes: %{resource}"
+    edit:
+      <<: *default
+      header: "Editar: %{resource}"
+    new:
+      <<: *default
+      header: "Cadastrar Client"
+    create:
+      alert: "Client não pode ser cadastrado."
+      notice: "Client cadastrado com sucesso."
+    update:
+      alert: "Client não pode ser atualizado."
+      notice: "Client atualizado com sucesso."
+    destroy:
+      alert: "Client não pode ser excluído."
+      notice: "Client excluído com sucesso."
+      
+  helpers:
+    submit:
+      client:
+        create: "Cadastrar %{model}"
+        update: "Atualizar %{model}"      

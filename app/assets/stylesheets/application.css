@@ -10,16 +10,7 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require bootstrap.min
- *= require bootstrap-social
  *= require oneui
- *= require amaran.min
- *= require summernote
- *= require custom
- *= require magnific-popup.min
- *= require commontator/application
-  *= require sweet-alert
-   *= require bootstrap-datepicker3
  *= require_self
 
  */

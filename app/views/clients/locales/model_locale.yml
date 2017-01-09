@@ -1,0 +1,15 @@
+pt-BR:
+  activerecord:
+    models:
+      client:
+        one: "Client"
+        other: "clients"
+        explain: "Client"
+
+    attributes:
+      client:
+        fantasy_name: "fantasy_name"
+        corporate_name: "corporate_name"
+        id: ID
+        created_at: Criado em
+        updated_at: Atualizado em

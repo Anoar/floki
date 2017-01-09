@@ -1,0 +1,13 @@
+
+
+
+development:
+  adapter: postgresql
+  encoding: utf8
+  database: floki
+  pool: 5
+  timeout: 5000
+  host: localhost
+  username: anoar
+  password: 123@qwe
+

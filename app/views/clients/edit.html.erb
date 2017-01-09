@@ -1,0 +1,17 @@
+<%= provide :page_title, I18n.t('clients.edit.header', resource: @client.try(:id) ) %>
+<%= provide :breadcrumb do %>
+  <li><%= link_to  I18n.t('activerecord.models.client.other'), clients_path %></li>
+  <li><%= link_to  @client.try(:id), @client %></li>
+  <li><%= I18n.t('clients.edit.header', resource: @client.try(:id) ) %></li>
+<% end %>
+
+<div class="row">
+  <div class="block">
+    <div class="block-header">
+        <h3 class="block-title"><%= I18n.t('clients.new.block_header') %></h3>
+    </div>
+    <div class="block-content">
+      <%= render 'form' %>
+    </div>
+  </div>
+</div>
